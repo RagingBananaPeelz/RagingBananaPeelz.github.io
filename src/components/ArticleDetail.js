@@ -256,26 +256,29 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
     });
   };
 
-  const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: fullArticle.title,
-          text: fullArticle.excerpt,
-          url: window.location.href,
-        });
-      } catch (err) {
-        console.log('Error sharing:', err);
-      }
-    } else {
-      try {
-        await navigator.clipboard.writeText(window.location.href);
-        alert('Article URL copied to clipboard!');
-      } catch (err) {
-        console.log('Error copying to clipboard:', err);
-      }
+const handleShare = async () => {
+  // Generate clean URL for social sharing (with embeds)
+  const cleanUrl = `https://cyberhostnigeria.com.ng/${fullArticle.slug}`;
+  
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: fullArticle.title,
+        text: fullArticle.excerpt,
+        url: cleanUrl, // <-- Now uses clean URL
+      });
+    } catch (err) {
+      console.log('Error sharing:', err);
     }
-  };
+  } else {
+    try {
+      await navigator.clipboard.writeText(cleanUrl); // <-- Clean URL for copy too
+      alert('Article URL copied to clipboard!');
+    } catch (err) {
+      console.log('Error copying to clipboard:', err);
+    }
+  }
+};
 
   return (
     <div className="min-h-screen bg-gray-50">
