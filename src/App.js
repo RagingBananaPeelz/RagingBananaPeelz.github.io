@@ -75,13 +75,20 @@ useEffect(() => {
 
 
   // Handle initial URL routing
+// Handle initial URL routing
 useEffect(() => {
   const hash = window.location.hash;
+  const path = window.location.pathname.replace('/', '').replace('.html', '');
+  
+  // Check hash first (existing format), then path (from static HTML)
   const articleMatch = hash.match(/^#\/article\/(.+)$/);
-
+  
   if (articleMatch) {
     const slug = articleMatch[1];
     handleArticleSelect(slug);
+  } else if (path && path !== '') {
+    // Handle direct URLs from static HTML files
+    handleArticleSelect(path);
   }
 }, []);
 
