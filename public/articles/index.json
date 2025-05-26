@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "rtx-4070-ti-price-drop",
+    "title": "RTX 4070 Ti Graphics Cards See Significant Price Drop in Nigerian Market",
+    "excerpt": "Gaming enthusiasts in Nigeria can now access high-end graphics cards at more affordable prices as supply chain issues resolve and competition intensifies.",
+    "category": "Hardware",
+    "author": "Chinelo Ikenna",
+    "published": "2025-05-25",
+    "readTime": "3 min read",
+    "tags": ["GPU", "gaming", "hardware", "prices"],
+    "image": "/articles/images/4070ti.jpg",
+    "trending": false,
+    "views": 892,
+    "comments": 15
+  },
+  {
+    "slug": "critical-ncc-response",
+    "title": "Critical Response to the Allegations Against the Nigerian Communications Commission (NCC)",
+    "excerpt": "The recent uproar over alleged irregularities and victimization within the Nigerian Communications Commission (NCC) demands a measured and evidence-based response, especially given the commission's strategic importance to Nigeria's digital and economic advancement.",
+    "category": "Government & Policy",
+    "author": "Maryam Kourrah",
+    "published": "2025-05-24",
+    "readTime": "9 min read",
+    "tags": ["telecommunications", "government", "civil service"],
+    "image": "/articles/images/ncc-headquarters-abuja.jpg",
+    "trending": true,
+    "views": 926,
+    "comments": 37
+  },
+    {
+    "slug": "ncc-outage-compensation",
+    "title": "Nigeria's Telecoms Regulator Introduces New Outage Notification and Compensation Rules",
+    "excerpt": "NCC mandates operators to notify consumers of major outages and provide compensation for disruptions exceeding 24 hours to boost transparency",
+    "category": "Government & Policy",
+    "author": "Munira Audu",
+    "published": "2025-05-26",
+    "readTime": "4 min read",
+    "tags": ["telecommunications", "government", "civil service"],
+    "image": "/articles/images/telecom-outage-compensation.jpg",
+    "trending": true,
+    "views": 532,
+    "comments": 86
+  }
+]
