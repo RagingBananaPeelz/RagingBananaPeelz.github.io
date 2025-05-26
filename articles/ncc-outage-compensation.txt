@@ -1,0 +1,48 @@
+---
+title: "Nigeria's Telecoms Regulator Introduces New Outage Notification and Compensation Rules"
+excerpt: "NCC mandates operators to notify consumers of major outages and provide compensation for disruptions exceeding 24 hours to boost transparency."
+category: "Telecommunications"
+tags: ["NCC", "Network Outages", "Consumer Protection", "MTN", "Airtel", "Globacom", "9mobile"]
+author: "Munira Audu"
+published: "2025-05-26T14:30:00Z"
+updated: "2025-05-26T14:30:00Z"
+featured: false
+trending: true
+image: "/articles/images/telecom-outage-compensation.jpg"
+imageAlt: "Nigerian telecommunications infrastructure with NCC regulatory oversight"
+seoTitle: "Nigeria NCC New Rules: Telecom Outage Notification & Compensation Requirements"
+seoDescription: "Nigerian Communications Commission introduces mandatory outage notifications and 24-hour compensation rules for MTN, Airtel, Globacom, and 9mobile."
+---
+
+# Nigeria's Telecoms Regulator Introduces New Outage Notification and Compensation Rules
+
+Nigeria's telecoms regulator has introduced new rules requiring operators to notify consumers of major network outages and compensate users when service disruptions exceed 24 hours, in a move aimed at boosting transparency and accountability across the sector.
+
+The Nigerian Communications Commission disclosed the directive in a statement issued on Sunday and signed by the acting Head of Public Affairs, Nnenna Ukoha, stating that the rules are part of efforts to improve the quality of experience for telecom subscribers and hold service providers more accountable.
+
+## New Requirements for Service Providers
+
+Under the new regulations, mobile network operators, internet service providers, and other last-mile service providers must inform consumers of major outages via media channels. They are required to disclose:
+
+- The cause of the outage
+- Affected areas
+- The estimated time for service restoration
+
+Planned maintenance or service disruptions must be announced at least one week in advance.
+
+## Recent Outage Statistics
+
+Last week, the NCC's Uptime portal revealed that all four major operators—MTN, Airtel, Globacom, and 9mobile—suffered outages in May:
+
+- **Globacom**: 13 incidents
+- **9mobile**: 11 incidents
+- **MTN**: 5 incidents
+- **Airtel**: 4 incidents
+
+The outages primarily occurred due to fibre cuts and power issues in states like Lagos, Rivers, Ogun, and the Federal Capital Territory. MTN and Airtel reported disruptions linked to fibre damage in states such as Benue, Imo, Akwa Ibom, Bayelsa, and Abia.
+
+These outages, caused by road construction, vandalism, and equipment theft, led to degraded service quality, dropped calls, and widespread internet disruptions, affecting millions of subscribers across urban and rural areas.
+
+## Compensation Requirements
+
+The directive, effective immediately, mandates proportional compensation, such as extended service validity for outages lasting over 24 hours, in accordance with the NCC's Consumer Code of Practice Regulations. This applies to mobile network operators, Internet service providers, and other last-mile service providers.

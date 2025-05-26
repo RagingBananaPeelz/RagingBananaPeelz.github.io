@@ -4,11 +4,11 @@ excerpt: "Graphics card market sees significant price reduction as importers com
 category: "Hardware"
 tags: ["RTX 4070 Ti", "Graphics Cards", "Computer Village", "Gaming", "GPU Prices"]
 author: "Kemi Adeyemi"
-published: "2024-05-26T08:30:00Z"
-updated: "2024-05-26T08:30:00Z"
+published: "2025-05-25T08:30:00Z"
+updated: "2025-05-25T08:30:00Z"
 featured: true
 trending: true
-image: "/articles/images/computer-village.jpg"
+image: "/articles/images/4070ti.jpg"
 imageAlt: "Graphics cards display in Computer Village Lagos"
 seoTitle: "RTX 4070 Ti Price Drop 25% Lagos Computer Village - GPU Market Analysis"
 seoDescription: "Major price reduction in RTX 4070 Ti graphics cards at Lagos Computer Village. Market analysis and buying guide for Nigerian PC builders."
@@ -29,7 +29,7 @@ The **NVIDIA GeForce RTX 4070 Ti** has experienced a dramatic **25% price reduct
 | **Computer Warehouse** | ₦525,000 | ₦395,000 | ₦130,000 |
 | **Average Market Price** | ₦518,000 | ₦390,000 | ₦128,000 |
 
-*Prices surveyed on May 25, 2024. Includes VAT but excludes installation fees.*
+*Prices surveyed on May 25, 2025. Includes VAT but excludes installation fees.*
 
 ## What's Driving the Price Drop?
 
@@ -94,7 +94,7 @@ Several market factors have converged to create this pricing opportunity:
 - Lower power consumption
 
 ### **Wait-and-See Approach**: Monitor RTX 4070 Super pricing
-- Expected Q4 2024 release
+- Expected Q4 2025 release
 - Potentially better value proposition
 - Current 4070 Ti prices may drop further
 
@@ -116,7 +116,7 @@ Several market factors have converged to create this pricing opportunity:
 Based on current trends, we expect:
 - **Further 5-10% price drops** if RTX 4070 Super launches as expected
 - **Stable pricing** through December festive season
-- **Potential increase** in Q1 2025 due to import duty adjustments
+- **Potential increase** in Q1 2026 due to import duty adjustments
 
 ## Bottom Line
 
