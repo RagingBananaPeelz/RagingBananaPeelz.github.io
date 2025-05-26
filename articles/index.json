@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "5g-network-nigeria",
+    "title": "Nigeria's 5G Network Rollout Accelerates Across Major Cities",
+    "excerpt": "Telecommunications companies are rapidly expanding 5G infrastructure across Lagos, Abuja, and Port Harcourt, promising faster internet speeds and new technological possibilities.",
+    "category": "Telecommunications",
+    "author": "Adebayo Ogundimu",
+    "published": "2024-01-15",
+    "readTime": "4 min read",
+    "tags": ["5G", "telecommunications", "infrastructure", "Lagos"],
+    "image": "/articles/images/5g-tower-lagos.jpg",
+    "trending": true,
+    "views": 1250,
+    "comments": 23
+  },
+  {
+    "slug": "rtx-4070-ti-price-drop",
+    "title": "RTX 4070 Ti Graphics Cards See Significant Price Drop in Nigerian Market",
+    "excerpt": "Gaming enthusiasts in Nigeria can now access high-end graphics cards at more affordable prices as supply chain issues resolve and competition intensifies.",
+    "category": "Hardware",
+    "author": "Chinelo Ikenna",
+    "published": "2024-01-14",
+    "readTime": "3 min read",
+    "tags": ["GPU", "gaming", "hardware", "prices"],
+    "image": "/articles/images/computer-village.jpg",
+    "trending": false,
+    "views": 892,
+    "comments": 15
+  },
+  {
+    "slug": "blockchain-land-registry",
+    "title": "Lagos State Pilots Blockchain-Based Land Registry System",
+    "excerpt": "The Lagos State government is testing a revolutionary blockchain system to streamline land registration and reduce property disputes.",
+    "category": "Government & Policy",
+    "author": "Ibrahim Musa",
+    "published": "2024-01-13",
+    "readTime": "5 min read",
+    "tags": ["blockchain", "government", "real estate", "Lagos"],
+    "trending": false,
+    "views": 654,
+    "comments": 8
+  },
+  {
+    "slug": "critical-ncc-response",
+    "title": "Critical Response to the Allegations Against the Nigerian Communications Commission (NCC)",
+    "excerpt": "The recent uproar over alleged irregularities and victimization within the Nigerian Communications Commission (NCC) demands a measured and evidence-based response, especially given the commission's strategic importance to Nigeria's digital and economic advancement.",
+    "category": "Government & Policy",
+    "author": "Maryam Kourrah",
+    "published": "2025-01-13",
+    "readTime": "9 min read",
+    "tags": ["telecommunications", "government", "civil service"],
+    "trending": true,
+    "views": 926,
+    "comments": 37
+  }
+]
