@@ -1,9 +1,8 @@
-// File: src/components/ArticleDetail.js
+// File: src/components/ArticleDetail.js - Mobile Optimized
 import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, Eye, MessageCircle, Share2, User, Tag, ArrowLeft, TrendingUp, AlertCircle } from 'lucide-react';
 import MarkdownRenderer from './MarkdownRenderer';
 import { updateMetaTags } from '../utils/metaTags';
-
 
 const ArticleDetail = ({ article, onBack }) => {
   const [loading, setLoading] = useState(!article);
@@ -66,8 +65,6 @@ const ArticleDetail = ({ article, onBack }) => {
         }
 
         // Otherwise, try to load full content
-        // This would typically call your articleLoader with the article slug
-        // For now, we'll simulate this process
         const loadedArticle = await loadArticleContent(article.slug || article.id);
         
         if (!hasValidContent(loadedArticle)) {
@@ -95,20 +92,17 @@ const ArticleDetail = ({ article, onBack }) => {
     return contentFields.some(field => 
       articleData[field] && 
       typeof articleData[field] === 'string' && 
-      articleData[field].trim().length > 100 // Minimum meaningful content length
+      articleData[field].trim().length > 100
     );
   };
 
-  // Simulate loading full article content - replace with your actual loader
+  // Simulate loading full article content
   const loadArticleContent = async (articleId) => {
-    // This should be replaced with your actual article loading logic
-    // For now, return the original article with some validation
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (article && hasValidContent(article)) {
           resolve(article);
         } else {
-          // Create enhanced article with better fallback content
           resolve({
             ...article,
             content: generateFallbackContent(article)
@@ -119,7 +113,6 @@ const ArticleDetail = ({ article, onBack }) => {
   };
 
   const loadRelatedArticles = () => {
-    // Simulate loading related articles
     setTimeout(() => {
       setRelatedArticles([
         {
@@ -183,7 +176,6 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
   const getArticleContent = () => {
     if (!fullArticle) return '';
 
-    // Priority order for content fields
     const contentFields = ['content', 'markdown', 'body', 'text'];
     
     for (const field of contentFields) {
@@ -193,40 +185,27 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
       }
     }
 
-    // If no content found, generate fallback
     return generateFallbackContent(fullArticle);
   };
 
   if (loading) {
     return (
-      <div className="max-w-4xl mx-auto px-6 py-8">
+      <div className="max-w-4xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
         <div className="animate-pulse">
-          {/* Back button skeleton */}
-          <div className="bg-gray-200 rounded h-4 w-32 mb-6"></div>
-          
-          {/* Header skeleton */}
-          <div className="mb-6">
-            <div className="flex space-x-3 mb-4">
-              <div className="bg-gray-200 rounded-full h-6 w-20"></div>
-              <div className="bg-gray-200 rounded-full h-6 w-16"></div>
+          <div className="bg-gray-200 rounded h-4 w-32 mb-4 sm:mb-6"></div>
+          <div className="mb-4 sm:mb-6">
+            <div className="flex space-x-3 mb-3 sm:mb-4">
+              <div className="bg-gray-200 rounded-full h-5 sm:h-6 w-16 sm:w-20"></div>
+              <div className="bg-gray-200 rounded-full h-5 sm:h-6 w-12 sm:w-16"></div>
             </div>
-            <div className="bg-gray-200 rounded h-8 w-3/4 mb-4"></div>
-            <div className="bg-gray-200 rounded h-4 w-full mb-2"></div>
-            <div className="bg-gray-200 rounded h-4 w-2/3 mb-6"></div>
-            <div className="flex space-x-4 mb-6">
-              <div className="bg-gray-200 rounded h-4 w-24"></div>
-              <div className="bg-gray-200 rounded h-4 w-20"></div>
-              <div className="bg-gray-200 rounded h-4 w-16"></div>
-            </div>
+            <div className="bg-gray-200 rounded h-6 sm:h-8 w-3/4 mb-3 sm:mb-4"></div>
+            <div className="bg-gray-200 rounded h-3 sm:h-4 w-full mb-2"></div>
+            <div className="bg-gray-200 rounded h-3 sm:h-4 w-2/3 mb-4 sm:mb-6"></div>
           </div>
-          
-          {/* Image skeleton */}
-          <div className="bg-gray-200 rounded-lg h-64 w-full mb-8"></div>
-          
-          {/* Content skeleton */}
-          <div className="space-y-4">
-            {[...Array(10)].map((_, i) => (
-              <div key={i} className="bg-gray-200 rounded h-4 w-full"></div>
+          <div className="bg-gray-200 rounded-lg h-48 sm:h-64 w-full mb-6 sm:mb-8"></div>
+          <div className="space-y-3 sm:space-y-4">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="bg-gray-200 rounded h-3 sm:h-4 w-full"></div>
             ))}
           </div>
         </div>
@@ -236,22 +215,22 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
 
   if (error) {
     return (
-      <div className="max-w-4xl mx-auto px-6 py-8">
-        <div className="bg-red-50 border border-red-200 rounded-xl p-8 text-center">
-          <AlertCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
-          <h2 className="text-lg font-medium text-red-900 mb-2">Error Loading Article</h2>
-          <p className="text-red-600 mb-4">{error}</p>
-          <div className="flex space-x-4 justify-center">
+      <div className="max-w-4xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
+        <div className="bg-red-50 border border-red-200 rounded-xl p-4 sm:p-8 text-center">
+          <AlertCircle className="w-8 sm:w-12 h-8 sm:h-12 text-red-500 mx-auto mb-3 sm:mb-4" />
+          <h2 className="text-base sm:text-lg font-medium text-red-900 mb-2">Error Loading Article</h2>
+          <p className="text-sm sm:text-base text-red-600 mb-4">{error}</p>
+          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 justify-center">
             <button 
               onClick={() => window.location.reload()} 
-              className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
+              className="bg-red-600 text-white px-4 py-2 text-sm sm:text-base rounded-lg hover:bg-red-700 transition-colors"
             >
               Try Again
             </button>
             {onBack && (
               <button 
                 onClick={onBack}
-                className="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors flex items-center"
+                className="bg-gray-600 text-white px-4 py-2 text-sm sm:text-base rounded-lg hover:bg-gray-700 transition-colors flex items-center justify-center"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Go Back
@@ -289,7 +268,6 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
         console.log('Error sharing:', err);
       }
     } else {
-      // Fallback to copying URL to clipboard
       try {
         await navigator.clipboard.writeText(window.location.href);
         alert('Article URL copied to clipboard!');
@@ -301,12 +279,12 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-6 py-8">
+      <div className="max-w-4xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
         {/* Back button */}
         {onBack && (
           <button 
             onClick={onBack}
-            className="flex items-center text-gray-600 hover:text-gray-800 mb-6 transition-colors group"
+            className="flex items-center text-gray-600 hover:text-gray-800 mb-4 sm:mb-6 transition-colors group text-sm sm:text-base"
           >
             <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
             Back to Articles
@@ -314,9 +292,9 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
         )}
 
         {/* Article header */}
-        <header className="mb-8">
-          <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+        <header className="mb-6 sm:mb-8">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+            <span className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium ${
               fullArticle.category === 'Hardware' ? 'bg-purple-100 text-purple-700' :
               fullArticle.category === 'Telecommunications' ? 'bg-blue-100 text-blue-700' :
               fullArticle.category === 'FinTech' ? 'bg-green-100 text-green-700' :
@@ -328,45 +306,45 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
             </span>
             
             {fullArticle.trending && (
-              <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium flex items-center">
+              <span className="bg-red-100 text-red-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium flex items-center">
                 <TrendingUp className="w-3 h-3 mr-1" />
                 Trending
               </span>
             )}
           </div>
 
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">
             {fullArticle.title}
           </h1>
 
-          <p className="text-xl text-gray-600 mb-6 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4 sm:mb-6 leading-relaxed">
             {fullArticle.excerpt}
           </p>
 
           {/* Article meta */}
-          <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 mb-6">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6">
             <div className="flex items-center">
-              <User className="w-4 h-4 mr-2" />
+              <User className="w-3 sm:w-4 h-3 sm:h-4 mr-1 sm:mr-2" />
               <span>by <strong>{fullArticle.author || 'CyberHost Nigeria Editorial'}</strong></span>
             </div>
             
             <div className="flex items-center">
-              <Calendar className="w-4 h-4 mr-2" />
+              <Calendar className="w-3 sm:w-4 h-3 sm:h-4 mr-1 sm:mr-2" />
               <span>{formatDate(fullArticle.published) || fullArticle.published}</span>
             </div>
             
             <div className="flex items-center">
-              <Clock className="w-4 h-4 mr-2" />
+              <Clock className="w-3 sm:w-4 h-3 sm:h-4 mr-1 sm:mr-2" />
               <span>{fullArticle.readTime}</span>
             </div>
             
-            <div className="flex items-center">
-              <Eye className="w-4 h-4 mr-2" />
+            <div className="hidden sm:flex items-center">
+              <Eye className="w-3 sm:w-4 h-3 sm:h-4 mr-1 sm:mr-2" />
               <span>{fullArticle.views || '0'} views</span>
             </div>
             
-            <div className="flex items-center">
-              <MessageCircle className="w-4 h-4 mr-2" />
+            <div className="hidden sm:flex items-center">
+              <MessageCircle className="w-3 sm:w-4 h-3 sm:h-4 mr-1 sm:mr-2" />
               <span>{fullArticle.comments || '0'} comments</span>
             </div>
             
@@ -374,17 +352,17 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
               onClick={handleShare}
               className="flex items-center text-blue-600 hover:text-blue-700 transition-colors"
             >
-              <Share2 className="w-4 h-4 mr-2" />
+              <Share2 className="w-3 sm:w-4 h-3 sm:h-4 mr-1 sm:mr-2" />
               Share
             </button>
           </div>
 
           {/* Tags */}
           {fullArticle.tags && fullArticle.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-6">
+            <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-6">
               {fullArticle.tags.map((tag, index) => (
-                <span key={index} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm flex items-center">
-                  <Tag className="w-3 h-3 mr-1" />
+                <span key={index} className="bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm flex items-center">
+                  <Tag className="w-2 sm:w-3 h-2 sm:h-3 mr-1" />
                   {tag}
                 </span>
               ))}
@@ -394,14 +372,14 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
 
         {/* Featured image */}
         {fullArticle.image && (
-          <div className="mb-8">
+          <div className="mb-6 sm:mb-8">
             <img 
               src={fullArticle.image} 
               alt={fullArticle.imageAlt || fullArticle.title}
-              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              className="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-lg"
             />
             {fullArticle.imageCaption && (
-              <p className="text-sm text-gray-600 mt-3 text-center italic">
+              <p className="text-xs sm:text-sm text-gray-600 mt-2 sm:mt-3 text-center italic">
                 {fullArticle.imageCaption}
               </p>
             )}
@@ -409,7 +387,7 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
         )}
 
         {/* Article content */}
-        <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
+        <div className="bg-white rounded-xl shadow-sm p-4 sm:p-6 md:p-8 mb-6 sm:mb-8">
           <MarkdownRenderer 
             content={getArticleContent()}
             standalone={true}
@@ -419,21 +397,21 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
 
         {/* Related Articles */}
         {relatedArticles.length > 0 && (
-          <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Related Articles</h3>
-            <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-white rounded-xl shadow-sm p-4 sm:p-6 mb-6 sm:mb-8">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Related Articles</h3>
+            <div className="grid gap-3 sm:gap-4 md:grid-cols-2">
               {relatedArticles.map((related) => (
-                <div key={related.id} className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
-                  <div className="flex items-center space-x-2 mb-2">
+                <div key={related.id} className="p-3 sm:p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
                     <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
                       {related.category}
                     </span>
                     <span className="text-xs text-gray-500">{related.published}</span>
                   </div>
-                  <h4 className="font-medium text-gray-900 hover:text-blue-600 transition-colors mb-1">
+                  <h4 className="font-medium text-gray-900 hover:text-blue-600 transition-colors mb-1 text-sm sm:text-base">
                     {related.title}
                   </h4>
-                  <p className="text-sm text-gray-600">{related.readTime}</p>
+                  <p className="text-xs sm:text-sm text-gray-600">{related.readTime}</p>
                 </div>
               ))}
             </div>
@@ -441,26 +419,26 @@ The ongoing evolution of Nigeria's technology sector presents both opportunities
         )}
 
         {/* Article footer */}
-        <footer className="bg-white rounded-xl shadow-sm p-6">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-green-500 rounded-full flex items-center justify-center">
-                <User className="w-6 h-6 text-white" />
+        <footer className="bg-white rounded-xl shadow-sm p-4 sm:p-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6">
+            <div className="flex items-center space-x-3 sm:space-x-4">
+              <div className="w-10 sm:w-12 h-10 sm:h-12 bg-gradient-to-br from-blue-600 to-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <User className="w-5 sm:w-6 h-5 sm:h-6 text-white" />
               </div>
-              <div>
-                <h4 className="font-medium text-gray-900">{fullArticle.author || 'CyberHost Nigeria Editorial'}</h4>
-                <p className="text-sm text-gray-600">
+              <div className="min-w-0">
+                <h4 className="font-medium text-gray-900 text-sm sm:text-base">{fullArticle.author || 'CyberHost Nigeria Editorial'}</h4>
+                <p className="text-xs sm:text-sm text-gray-600">
                   {fullArticle.authorBio || 'Expert technology journalist covering Nigeria\'s digital transformation and innovation ecosystem.'}
                 </p>
               </div>
             </div>
             
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center">
               <button 
                 onClick={handleShare}
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center"
+                className="bg-blue-600 text-white px-3 sm:px-4 py-2 text-sm sm:text-base rounded-lg hover:bg-blue-700 transition-colors flex items-center"
               >
-                <Share2 className="w-4 h-4 mr-2" />
+                <Share2 className="w-3 sm:w-4 h-3 sm:h-4 mr-1 sm:mr-2" />
                 Share Article
               </button>
             </div>
