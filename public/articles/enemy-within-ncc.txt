@@ -8,7 +8,7 @@ published: "2025-06-12T08:00:00Z"
 updated: "2025-06-12T08:00:00Z"
 featured: true
 trending: true
-image: "/images/ncc-building.jpg"
+image: "/images/ncc-headquarters-abuja.jpg"
 imageAlt: "Nigerian Communications Commission headquarters building"
 seoTitle: "The Enemy Within: Allegations Against NCC Debunked | CyberHost Nigeria"
 seoDescription: "A full-length response to the intimidation and bias claims facing the Nigerian Communications Commission, examining the real motives and facts behind the reform resistance."
