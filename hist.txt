@@ -1,0 +1,404 @@
+    1  apt update && apt install curl gnupg lsb-release
+    2  curl -fsSL https://get.docker.com | sh
+    3  sudo usermod -aG docker $USER
+    4  usermod -aG docker $USER
+    5  logout && login
+    6  apt install docker-compose-plugin
+    7  ls
+    8  cd pis-backend/
+    9  ls
+   10  ls /
+   11  ls
+   12  cd pis-backend/
+   13  ls
+   14  cat docker-compose.yml 
+   15  cat Dockerfile 
+   16  ifreload -a
+   17  hostname -I
+   18  reboot
+   19  ls
+   20  bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/addon/coder-code-server.sh)"
+   21  ls
+   22  mkdir cyberhostnigeria
+   23  ls
+   24  git clone https://github.com/wilsmex/blog-site-template.git
+   25  cd blog-site-template/
+   26  ls
+   27  cd ..
+   28  npm create vite@latest techpulse-nigeria -- --template react
+   29  apt install npm
+   30  cd techpulse-nigeria
+   31  npm create vite@latest techpulse-nigeria -- --template react
+   32  cd techpulse-nigeria/
+   33  npm install
+   34  npm install react-router-dom
+   35  ls
+   36  npm run dev
+   37  npm run dev --host
+   38  npm run --host dev
+   39  npm run dev --host
+   40  npm run dev -- --host
+   41  ls
+   42  cd ..
+   43  ls
+   44  rm -rf techpulse-nigeria/
+   45  mkdir techpulse-nigeria
+   46  mv techpulse-nigeria/ cyberhost-nigeria
+   47  cd cyberhost
+   48  cd cyberhostnigeria/
+   49  cd ..
+   50  cyberhost-nigeria/
+   51  cd cyberhost-nigeria/
+   52  npm init -y
+   53  npm install react react-dom react-scripts lucide-react
+   54  npm install --save-dev gh-pages
+   55  ls
+   56  mkdir public
+   57  mkdir src
+   58  nano public/index.html
+   59  nano src/index.js
+   60  nano src/App.js
+   61  nano package.json 
+   62  npm start 
+   63  npm install marked
+   64  npm start 
+   65  git init
+   66  git add .
+   67  npm run build
+   68  cd build/
+   69  ls
+   70  git init
+   71  git commit -m "first commit"
+   72  git add .
+   73  git commit -m "first commit"
+   74  git branch -M main
+   75  git remote add origin https://github.com/RagingBananaPeelz/CyberHubNigeria.git
+   76  git push -u origin main
+   77  git push -u origin main
+   78  git push -u origin main
+   79  git status
+   80  cd ..
+   81  ls
+   82  ls build/
+   83  ls build/static/
+   84  npm run build
+   85  cd build/
+   86  git status
+   87  git add .
+   88  git push -u origin main
+   89  git push
+   90  git push -u origin main
+   91  git branch
+   92  git remote add origin https://github.com/RagingBananaPeelz/RagingBananaPeelz.git
+   93  git push -u origin main
+   94  git branch
+   95  git pull
+   96  git commit -m "Added homepage"
+   97  git push -u origin main
+   98  git branch
+   99  git push -u origin master
+  100  git remote add origin https://github.com/RagingBananaPeelz/RagingBananaPeelz.github.io
+  101  git branch
+  102  git remote -v
+  103  git remote remove origin
+  104  git remote add origin https://github.com/RagingBananaPeelz/RagingBananaPeelz.github.io
+  105  git add .
+  106  git commit -m "Added homepage"
+  107  git add .
+  108  git commit -m "Added homepage"
+  109  git add
+  110  git add .
+  111  git commit -m "Added homepage"
+  112  rm -rf .git  # remove old git repo if needed
+  113  git init
+  114  git remote add origin https://github.com/RagingBananaPeelz/RagingBananaPeelz.github.io
+  115  git branch -M main
+  116  git add .
+  117  git commit -m "Added homepage"
+  118  git push -u origin main --force
+  119  sl
+  120  ls
+  121  cd articles/
+  122  ls
+  123  cd..
+  124  cd ..
+  125  ks
+  126  ls
+  127  cd ..
+  128  ls
+  129  nano package.json 
+  130  nano src/components/ArticleList.js 
+  131  npm run build
+  132  git add .
+  133  cd build/
+  134  git add .
+  135  git commit -m "fix for path"
+  136  git push -u origin main --force
+  137  git push 
+  138  git push --set-upstream origin master
+  139  ls
+  140  ls -la
+  141  echo key > .gitignore
+  142  git push --set-upstream origin master
+  143  clear
+  144  git ls
+  145  ls -la
+  146  cd ..
+  147  ls
+  148  ls -la
+  149  rm -rf .git
+  150  cd build/
+  151  ls
+  152  git init
+  153  git remote add origin https://github.com/RagingBananaPeelz/RagingBananaPeelz.github.io
+  154  git branch -M main
+  155  git add .
+  156  git commit -m "Added fix"
+  157  git push -u origin main --force
+  158  cd ..
+  159  npm run build
+  160  cd -
+  161  git init
+  162  git remote add origin https://github.com/RagingBananaPeelz/RagingBananaPeelz.github.io
+  163  git branch -M main
+  164  git add .
+  165  git commit -m "Added fix"
+  166  git push -u origin main --force
+  167  touch .nojekyll
+  168  nano .nojekyll
+  169  nano .htaccess
+  170  git add .
+  171  git commit -m "Added fix"
+  172  git push -u origin main --force
+  173  cd ..
+  174  npm run build
+  175  cd -
+  176  ls
+  177  git add .
+  178  git init
+  179  git remote add origin https://github.com/RagingBananaPeelz/RagingBananaPeelz.github.io
+  180  git branch -M main
+  181  git add .
+  182  git commit -m "Added fix"
+  183  git push -u origin main --force
+  184  cd ..
+  185  cp -r build $HOME/.
+  186  ls $HOME
+  187  ls
+  188  git remote add origin https://github.com/RagingBananaPeelz/RagingBananaPeelz.github.io.git
+  189  git fetch origin
+  190  git checkout -b main
+  191  git add .
+  192  echo "build/" >> .gitignore
+  193  echo "node_modules/" >> .gitignore
+  194  git add .gitignore
+  195  echo ".key" >> .gitignore
+  196  cat .gitignore 
+  197  ls
+  198  git commit -m "Initial commit - React app source code"
+  199  git push -u origin main
+  200  git pull
+  201  git branch -r
+  202  git fetch origin main
+  203  git push -u origin main --force
+  204  mkdir -p .github/workflows
+  205  nano .github/workflows/deploy.yml
+  206  git add .github/workflows/deploy.yml
+  207  git commit -m "Add GitHub Actions workflow for automatic deployment"
+  208  git push origin main
+  209  git commit -m "Added Embed options"
+  210  git status
+  211  git add .
+  212  git commit -m "Added Embed options"
+  213  git push origin main
+  214  touch generate-article-pages.js
+  215  node generate-article-pages.js
+  216  git add .
+  217  git commit -m "Add static HTML files for social sharing"
+  218  git push origin main
+  219  git add .
+  220  git commit -m "Add static HTML files for social media sharing and enhanced routing"
+  221  git push origin main
+  222  git add .
+  223  git commit -m "Add social sharing support with static HTML files"
+  224  git push origin main
+  225  git log --oneline -10
+  226  git reset --hard 2592df3
+  227  git push --force-with-lease origin main
+  228  git add public/critical-ncc-response.html src/App.js
+  229  git commit -m "Add social sharing for critical-ncc-response article"
+  230  git push origin main
+  231  node generate-social-pages.js
+  232  git add public/*.html
+  233  git commit -m "Add social sharing pages with custom domain"
+  234  git push origin main
+  235  git add src/components/ArticleDetail.js 
+  236  git commit -m "Added mobile ui fix"
+  237  git push origin main
+  238  git add src/components/ArticleDetail.js 
+  239  git commit -m "Fixed share button"
+  240  git push origin main
+  241  tree
+  242  apt install tree
+  243  tree
+  244  tree -I "node_modules"
+  245  cd build/
+  246  tree
+  247  cd ..
+  248  npm run dev
+  249  npm start 
+  250  cd build/
+  251  npm install -g serve
+  252  server -s .
+  253  serve -s .
+  254  git init
+  255  git add .
+  256  git commit -m "Testing "
+  257  git push
+  258  git pull
+  259  git push
+  260  ls
+  261  cd ..
+  262  zip build/
+  263  npm run build
+  264  serve -s build
+  265  npm install --save-dev gh-pages
+  266  npm run deploy
+  267  npm run deploy
+  268  npm run deploy
+  269  tree
+  270  tree -I "node_modules"
+  271  touch public/.nojekyll
+  272  npm run deploy
+  273  npm run deploy
+  274  npm run deploy
+  275  npm run deploy
+  276  cd public/articles/
+  277  ls
+  278  mv *.md *.txt
+  279  mv 5g-network-nigeria.md 5g-network-nigeria.txt 
+  280  mv critical-ncc-response.md critical-ncc-response.txt
+  281  mv rtx-4070-ti-price-drop.md rtx-4070-ti-price-drop.txt
+  282  mv blockchain-land-registry.md blockchain-land-registry.txt 
+  283  cd -
+  284  npm run deploy
+  285  serve -s build
+  286  npm run build
+  287  serve -s build
+  288  npm run build
+  289  serve -s build
+  290  npm run build
+  291  serve -s build
+  292  npm run build
+  293  serve -s build
+  294  npm run build
+  295  serve -s build
+  296  npm run build
+  297  serve -s build
+  298  npm run build
+  299  serve -s build
+  300  npm run deploy
+  301  tree -I node_modules/
+  302  npm run deploy
+  303  npm run build
+  304  serve -s build
+  305  npm run deploy
+  306  git checkout -b main
+  307  npm run build
+  308  git add .
+  309  cd build/
+  310  git add .
+  311  cd ..
+  312  git init
+  313  python3 -m http.server 80
+  314  python -m http.server
+  315  apt install python
+  316  apt install python3
+  317  python3 -m http.server 80
+  318  npx localtunnel --port 5173
+  319  npx localtunnel --port 5173
+  320  exit
+  321  df -h
+  322  ls
+  323  cd dance-game/
+  324  ls
+  325  hostname
+  326  hostname -I
+  327  nano src/components/PoseTracker.jsx 
+  328  tmux 
+  329  ls
+  330  cd ..
+  331  ls
+  332  clear
+  333  ls
+  334  cd cyberhost-nigeria/
+  335  ls
+  336  cd ..
+  337  ls
+  338  cd cyberhost
+  339  cd cyberhostnigeria/
+  340  ls
+  341  clear
+  342  ls
+  343  cd articles/
+  344  ls
+  345  cd ..
+  346  ls
+  347  clear
+  348  ls
+  349  cd ..
+  350  ls
+  351  clear
+  352  ls
+  353  cd cyberhost-nigeria/
+  354  clear
+  355  ls
+  356  ls
+  357  ls
+  358  cd public/
+  359  ls
+  360  cd ..
+  361  ls
+  362  cd src/
+  363  ls
+  364  cd components/
+  365  ls
+  366  cd ..
+  367  ls
+  368  cd utils/
+  369  ls
+  370  cd ..
+  371  ls
+  372  cd ..
+  373  ls
+  374  cat generate-social-pages.js 
+  375  clear
+  376  ls
+  377  ls src/
+  378  ls build/
+  379  cd build/articles/
+  380  ls
+  381  hostname -I
+  382  ls
+  383  cd ..
+  384  ls
+  385  cd ..
+  386  ls
+  387  node generate-social-pages.js
+  388  git add public/*.html
+  389  git commit -m "Add social sharing pages with custom domain"
+  390  git push origin main
+  391  git status
+  392  git commit -m "Add article for enemy within"
+  393  git push origin main
+  394  ls
+  395  cd build/
+  396  ls
+  397  cd articles/
+  398  ls
+  399  cd ..
+  400  ls
+  401  cd ..
+  402  git status
+  403  history | grep git
+  404  history > hist.txt
