@@ -3,7 +3,7 @@ title: "The Enemy within: How Internal Forces are Undermining the NCC"
 excerpt: "A detailed insider response to recent media allegations, revealing how false narratives and internal sabotage are threatening the integrity of the Nigerian Communications Commission."
 category: "Governance"
 tags: ["NCC", "Nigeria", "Public Sector", "Reform", "Media", "Institutional Integrity"]
-author: "CyberHost Nigeria Editorial"
+author: "Emmanuel Adebayo"
 published: "2025-06-12T08:00:00Z"
 updated: "2025-06-12T08:00:00Z"
 featured: true
