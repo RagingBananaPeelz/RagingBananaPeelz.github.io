@@ -3,6 +3,19 @@ const fs = require('fs');
 
 // Your articles - update this with your actual articles
 const articles = [
+
+      {
+    slug: "when-reform-meets-resistance",
+    title: "NCC under Attack When reform meets resistance",
+    description: "In recent weeks, a flurry of sensational headlines has sought to cast a dark cloud over the Nigerian Communications Commission (NCC)",
+    author: "Ramatu Abdul Yaro",
+    date: 'July 21, 2025',
+    image: '/articles/images/ncc-headquarters-abuja.jpg'
+
+
+  },
+
+
   {
     slug: 'critical-ncc-response',
     title: 'Critical Response to the Allegations Against the NCC',
@@ -49,8 +62,9 @@ const articles = [
   description: 'A critical response to recent media allegations, exposing how internal resistance and false narratives are threatening reform efforts at the NCC.',
   author: 'Munira Audu',
   date: 'June 12, 2025',
-  image: '/articles/images/telecom-outage-compensation.jpg.jpg'
-}
+  image: '/articles/images/telecom-outage-compensation.jpg'
+},
+
 ];
 
 const DOMAIN = 'https://cyberhostnigeria.com.ng';
